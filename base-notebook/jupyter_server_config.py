@@ -15,6 +15,7 @@ c.ServerApp.open_browser = False
 #c.ServerApp.base_url = '/node/slurmd-0/8888/'
 #c.ServerApp.websocket_url = '/node/slurmd-0/8888'
 
+c.Application.log_level = 'DEBUG'
 c.NotebookApp.base_url = '/node/slurmd-0/8888/'
 
 # to output both image/svg+xml and application/pdf plot formats in the notebook file
