@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - base-notebook/*
+      - .github/workflows/*
   workflow_dispatch: 
 
 jobs:
@@ -47,7 +48,7 @@ jobs:
         with:
           provenance: false
           push: true
-          file: base-notebook/Dockerfile
+          context: ./base-notebook
           tags: ${{ steps.image-meta.outputs.tags }}
           labels: ${{ steps.image-meta.outputs.labels }}
           cache-from: type=local,src=/tmp/.buildx-cache
