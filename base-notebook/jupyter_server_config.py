@@ -12,6 +12,7 @@ c.ServerApp.ip = "0.0.0.0"
 c.ServerApp.open_browser = False
 
 c.ServerApp.default_url = '/node/slurmd-0/8888/'
+c.ServerApp.base_url = '/node/slurmd-0/8888/'
 
 # to output both image/svg+xml and application/pdf plot formats in the notebook file
 c.InlineBackend.figure_formats = {"png", "jpeg", "svg", "pdf"}
