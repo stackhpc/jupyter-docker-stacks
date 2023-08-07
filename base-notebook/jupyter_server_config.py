@@ -11,7 +11,7 @@ c = get_config()  # noqa: F821
 c.ServerApp.ip = "0.0.0.0"
 c.ServerApp.open_browser = False
 
-#c.ServerApp.default_url = '/node/slurmd-0/8888/'
+c.ServerApp.default_url = '/node/slurmd-0/8888/'
 #c.ServerApp.base_url = '/node/slurmd-0/8888/'
 #c.ServerApp.websocket_url = '/node/slurmd-0/8888'
 
