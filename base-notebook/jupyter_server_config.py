@@ -18,6 +18,8 @@ c.ServerApp.default_url = '/node/slurmd-0/8888/'
 c.ServerApp.allow_remote_access = True
 c.ServerApp.allow_origin = '*'
 
+c.ServerApp.websocket_url = 'wss://0.0.0.0:8889'
+
 c.Application.log_level = 'DEBUG'
 c.NotebookApp.base_url = '/node/slurmd-0/8888/'
 
