@@ -8,25 +8,17 @@ import subprocess
 from jupyter_core.paths import jupyter_data_dir
 
 c = get_config()  # noqa: F821
-c.ServerApp.ip = "0.0.0.0"
+
+c.ServerApp.ip = "*"
 c.ServerApp.open_browser = False
-
-#c.ServerApp.allow_remote_access = True
-#c.ServerApp.allow_origin = '*'
-#c.ServerApp.base_url = '/node/slurmd-0/8888'
-#c.ServerApp.default_url = '/node/slurmd-0/8888/'
-
 c.Application.log_level = 'DEBUG'
-
-c.NotebookApp.ip = '*'
-c.NotebookApp.port = 8888
-c.NotebookApp.port_retries = 0
-c.NotebookApp.password = 'sha1:DF6B3EC0B13B8D17D4F31270420661F0BF9C355C:7d93500c86ae587b3d9f4bf1b8cec36f221c8183'
-c.NotebookApp.base_url = '/node/slurmd-0/8888/'
-c.NotebookApp.open_browser = False
-c.NotebookApp.allow_origin = '*'
-c.NotebookApp.notebook_dir = '/home/rocky'
-c.NotebookApp.disable_check_xsrf = True
+c.ServerApp.port = 8888
+c.ServerApp.port_retries = 0
+c.ServerApp.password = 'sha1:DF6B3EC0B13B8D17D4F31270420661F0BF9C355C:7d93500c86ae587b3d9f4bf1b8cec36f221c8183'
+c.ServerApp.base_url = '/node/slurmd-0/8888/'
+c.ServerApp.allow_origin = '*'
+c.ServerApp.notebook_dir = '/home/rocky'
+c.ServerApp.disable_check_xsrf = True
 
 # to output both image/svg+xml and application/pdf plot formats in the notebook file
 c.InlineBackend.figure_formats = {"png", "jpeg", "svg", "pdf"}
