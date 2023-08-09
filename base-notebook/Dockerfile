@@ -56,7 +56,6 @@ CMD ["start-notebook.sh"]
 
 # Copy local files as late as possible to avoid cache busting
 COPY start-notebook.sh start-singleuser.sh /usr/local/bin/
-COPY docker_healthcheck.py /etc/jupyter/
 
 # Fix permissions on /etc/jupyter as root
 USER root
