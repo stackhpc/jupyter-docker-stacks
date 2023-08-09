@@ -59,6 +59,7 @@ COPY start-notebook.sh start-singleuser.sh /usr/local/bin/
 
 # Fix permissions on /etc/jupyter as root
 USER root
+RUN mkdir -p /etc/jupyter
 RUN fix-permissions /etc/jupyter/
 
 # HEALTHCHECK documentation: https://docs.docker.com/engine/reference/builder/#healthcheck
