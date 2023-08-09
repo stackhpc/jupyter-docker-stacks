@@ -11,6 +11,10 @@ c = get_config()  # noqa: F821
 c.ServerApp.ip = "0.0.0.0"
 c.ServerApp.open_browser = False
 
+c.ServerApp.allow_remote_access = True
+c.ServerApp.allow_origin = '*'
+c.ServerApp.default_url = '/node/slurmd-0/8888/'
+
 c.Application.log_level = 'DEBUG'
 
 c.NotebookApp.ip = '*'
