@@ -13,6 +13,7 @@ c.ServerApp.open_browser = False
 
 c.ServerApp.allow_remote_access = True
 c.ServerApp.allow_origin = '*'
+c.ServerApp.base_url = '/node/slurmd-0/8888'
 c.ServerApp.default_url = '/node/slurmd-0/8888/'
 
 c.Application.log_level = 'DEBUG'
@@ -20,11 +21,11 @@ c.Application.log_level = 'DEBUG'
 c.NotebookApp.ip = '*'
 c.NotebookApp.port = 8888
 c.NotebookApp.port_retries = 0
-c.NotebookApp.password = u'sha1:7d93500c86ae587b3d9f4bf1b8cec36f221c8183'
+c.NotebookApp.password = 'sha1:7d93500c86ae587b3d9f4bf1b8cec36f221c8183'
 c.NotebookApp.base_url = '/node/slurmd-0/8888/'
 c.NotebookApp.open_browser = False
 c.NotebookApp.allow_origin = '*'
-c.NotebookApp.notebook_dir = /home/rocky
+c.NotebookApp.notebook_dir = '/home/rocky'
 c.NotebookApp.disable_check_xsrf = True
 
 # to output both image/svg+xml and application/pdf plot formats in the notebook file
