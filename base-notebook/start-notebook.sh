@@ -4,6 +4,9 @@
 
 set -e
 
+#Copying files from mounts
+cp /tempmounts/jupyter_server_config.py /etc/jupyter/jupyter_server_config.py
+
 # The Jupyter command to launch
 # JupyterLab by default
 DOCKER_STACKS_JUPYTER_CMD="${DOCKER_STACKS_JUPYTER_CMD:=lab}"
